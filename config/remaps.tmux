@@ -2,11 +2,6 @@
 # Remaps
 # -----------------------------
 
-# Remap prefix to Control + a
-set -g prefix C-a
-unbind C-b
-bind C-a send-prefix
-
 # bind -r h select-pane -L  # move left
 # bind -r j select-pane -D  # move down
 # bind -r k select-pane -U  # move up
@@ -37,7 +32,7 @@ bind C-c new-session
 bind C-f command-prompt -p find-session 'switch-client -t %%'
 
 # move to last active window
-bind Tab last-window
+# bind Tab last-window
 
 # clear both screen and history
 bind -n C-l send-keys C-l \; run 'sleep 0.1' \; clear-history
