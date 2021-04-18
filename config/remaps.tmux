@@ -61,3 +61,5 @@ bind-key -T copy-mode-vi C-\\ select-pane -l
 bind C-l send-keys 'C-l'
 bind y setw synchronize-panes on
 bind Y setw synchronize-panes off
+
+bind C-v command-prompt -p trm-compile 'send-keys -t trm:vagrant.1 "%%" C-m'
